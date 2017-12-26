@@ -1,6 +1,6 @@
 # Marinantonio
 
-Source code for live [Antonio] (https://https://marinantonio.github.io/marinantonio/) test
+Source code for live [Antonio](https://marinantonio.github.io/marinantonio/) test
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.0.
 
