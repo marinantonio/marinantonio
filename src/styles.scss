@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@import url('//fonts.googleapis.com/icon?family=Material+Icons');
+
+@include mat-core();
+
+$md-mcgpalette0: (
+  50 : #e2eaf0,
+  100 : #b7cada,
+  200 : #87a7c2,
+  300 : #5783a9,
+  400 : #336996,
+  500 : #0f4e84,
+  600 : #0d477c,
+  700 : #0b3d71,
+  800 : #083567,
+  900 : #042554,
+  A100 : #ff79a7,
+  A200 : #ff5d94,
+  A400 : #ff4081,
+  A700 : #ff3a79,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);
+
+$md-antonioaccent: (
+  50 : #ffe8f0,
+  100 : #ffc6d9,
+  200 : #ffa0c0,
+  300 : #ff79a7,
+  400 : #ff5d94,
+  500 : #ff4081,
+  600 : #ff3a79,
+  700 : #ff326e,
+  800 : #ff2a64,
+  900 : #ff1c51,
+  A100 : #ffffff,
+  A200 : #ffffff,
+  A400 : #ffcdd7,
+  A700 : #ffb3c3,
+  contrast: (
+    50 : #ffe8f0,
+    100 : #ffc6d9,
+    200 : #ffa0c0,
+    300 : #ff79a7,
+    400 : #ff5d94,
+    500 : #ff4081,
+    600 : #ff3a79,
+    700 : #ff326e,
+    800 : #ff2a64,
+    900 : #ff1c51,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffcdd7,
+    A700 : #ffb3c3,
+  )
+);
+
+
+
+
+$primary: mat-palette($md-mcgpalette0, 500);
+$accent:  mat-palette($md-mcgpalette0, A400);
+$warn:    mat-palette($mat-red, 500);
+
+$theme: mat-light-theme($primary, $accent, $warn);
+
+@include angular-material-theme($theme);
+
+body {
+  font-family: $mat-font-family;
+  font-weight: normal;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+}
