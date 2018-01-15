@@ -1,39 +1,72 @@
-.spacer {
-  flex: 0.45 0.45 auto;
+.below_h3 {
+  color: #3b3047;
 }
 
-.container {
-  /*width: 900px;*/
-  width: 70%;
-  max-width: 100%;
-  margin: 0 auto;
+* {
+  box-sizing: border-box;
 }
 
-.paragraph {
-  /*width: 880px;*/
-  /*!*width: 70%;*!*/
-  /*max-width: 100%;*/
-  /*margin-left: 12%;*/
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 60%;
+  padding: 0 30px 0 30px;
+  /*display: table-cell;*/
 }
 
-.image1 {
-  margin-top: 90%;
-  margin-right: 10%;
+.column1 {
+  float: left;
+  text-align: right;
+  width: 40%;
+  padding: 5px 10px 0 30px;
 }
 
-.image {
-  margin-top: 35%;
-  margin-right: 10%;
+ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style-type: none;
 }
 
-.footer{
-  /*display: flex;*/
-  /*!*justify-content: left; !* align horizontal *!*!*/
-  /*!*align-items: center; !* align vertical *!*!*/
-  /*!*width: auto;*!*/
-  margin-top: 5%;
-  background-color: #0f4e84;
-  /*text-align: center;*/
-  /*vertical-align: middle;*/
-  color: #fff;
+ul li {
+  position: relative;
+  margin-left: 1em;
+}
+
+ul li:before {
+  position: absolute;
+  left: -1em;
+  content: "*";
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  /*display: table;*/
+  display: flex;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 700px) {
+  .column {
+    width: 100%;
+  }
+
+  .column1 {
+    text-align: left;
+    width: 100%;
+  }
+
+  .avatar {
+    margin-top: 8%;
+    width: 120px;
+  }
+
+  .title_column {
+    font-size: 2.3em;
+  }
+
+  .title_summary {
+    font-size: 1em;
+  }
 }
